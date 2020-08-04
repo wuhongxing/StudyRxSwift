@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		1B607A3A24A412F800190BC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B607A3824A412F800190BC4 /* Main.storyboard */; };
 		1B607A3C24A412F900190BC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B607A3B24A412F900190BC4 /* Assets.xcassets */; };
 		1B607A3F24A412F900190BC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B607A3D24A412F900190BC4 /* LaunchScreen.storyboard */; };
+		1BEEBFC124D948B80021FECC /* ObservableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEEBFBF24D948B80021FECC /* ObservableViewController.swift */; };
+		1BEEBFC224D948B80021FECC /* ObservableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BEEBFC024D948B80021FECC /* ObservableViewController.xib */; };
 		28537D65C71005D95BA231E7 /* Pods_StudyRxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1181C0ABAE1A695F39B52CC5 /* Pods_StudyRxSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +28,8 @@
 		1B607A3B24A412F900190BC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B607A3E24A412F900190BC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B607A4024A412F900190BC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BEEBFBF24D948B80021FECC /* ObservableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableViewController.swift; sourceTree = "<group>"; };
+		1BEEBFC024D948B80021FECC /* ObservableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ObservableViewController.xib; sourceTree = "<group>"; };
 		6B9553BD36F9399E34E7B723 /* Pods-StudyRxSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyRxSwift.release.xcconfig"; path = "Target Support Files/Pods-StudyRxSwift/Pods-StudyRxSwift.release.xcconfig"; sourceTree = "<group>"; };
 		F580CE5D13C299F5450BEDCE /* Pods-StudyRxSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyRxSwift.debug.xcconfig"; path = "Target Support Files/Pods-StudyRxSwift/Pods-StudyRxSwift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,6 +70,8 @@
 				1B607A3224A412F800190BC4 /* AppDelegate.swift */,
 				1B607A3424A412F800190BC4 /* SceneDelegate.swift */,
 				1B607A3624A412F800190BC4 /* ViewController.swift */,
+				1BEEBFBF24D948B80021FECC /* ObservableViewController.swift */,
+				1BEEBFC024D948B80021FECC /* ObservableViewController.xib */,
 				1B607A3824A412F800190BC4 /* Main.storyboard */,
 				1B607A3B24A412F900190BC4 /* Assets.xcassets */,
 				1B607A3D24A412F900190BC4 /* LaunchScreen.storyboard */,
@@ -80,7 +86,6 @@
 				F580CE5D13C299F5450BEDCE /* Pods-StudyRxSwift.debug.xcconfig */,
 				6B9553BD36F9399E34E7B723 /* Pods-StudyRxSwift.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -153,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B607A3F24A412F900190BC4 /* LaunchScreen.storyboard in Resources */,
+				1BEEBFC224D948B80021FECC /* ObservableViewController.xib in Resources */,
 				1B607A3C24A412F900190BC4 /* Assets.xcassets in Resources */,
 				1B607A3A24A412F800190BC4 /* Main.storyboard in Resources */,
 			);
@@ -208,6 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B607A3724A412F800190BC4 /* ViewController.swift in Sources */,
+				1BEEBFC124D948B80021FECC /* ObservableViewController.swift in Sources */,
 				1B607A3324A412F800190BC4 /* AppDelegate.swift in Sources */,
 				1B607A3524A412F800190BC4 /* SceneDelegate.swift in Sources */,
 			);
