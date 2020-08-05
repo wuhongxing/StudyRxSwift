@@ -9,10 +9,12 @@
 import UIKit
 import RxSwift
 import NSObject_Rx
+import RxCocoa
 
 class ObservableViewController: UIViewController {
     
     @IBOutlet weak var resultLabel: UILabel!
+    @IBOutlet weak var textField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -108,12 +110,56 @@ class ObservableViewController: UIViewController {
     }
     
     @IBAction func driverButtonDidTouched(_ sender: UIButton) {
-        
+//        noDriver()
+        driver()
     }
     
-    @IBAction func signalButtonDidTouched(_ sender: UIButton) {
-        
+    private func noDriver() {
+        let result = textField.rx.text.orEmpty
+            .flatMapLatest { self.getRepo($0).observeOn(MainScheduler.instance).catchErrorJustReturn([:]) }.share(replay: 1, scope: .whileConnected)
+        result.map { $0.description }.bind(to: resultLabel.rx.text).disposed(by: rx.disposeBag)
     }
+    
+    private func driver() {
+//        let result = textField.rx.text.orEmpty.flatMapLatest { self.getRepo($0) }.asDriver(onErrorJustReturn: [:])
+        let result = textField.rx.text.orEmpty.asDriver().flatMapLatest { self.getRepo($0).asDriver(onErrorJustReturn: [:]) }
+        result.map { $0.description }.drive(resultLabel.rx.text).disposed(by: rx.disposeBag)
+    }
+    
+    private func driver1() {
+        let state = textField.rx.text.orEmpty.asDriver()
+        let observer = resultLabel.rx.text
+        state.drive(observer).disposed(by: rx.disposeBag)
+        print("我就呵呵了")
+        state.map { $0.count.description }.drive(rx.title).disposed(by: rx.disposeBag)
+    }
+    
+    static var count = 1
+    @IBAction func signalButtonDidTouched(_ sender: UIButton) {
+        if ObservableViewController.count == 1 {
+            let showAlert: (String) -> Void = { s in
+                print(s)
+            }
+            let event1 = sender.rx.tap.asSignal()
+            let event = sender.rx.tap.asDriver()
+            
+            let observer: (Observable<Void>) -> Void = { _ in showAlert("Driver: 弹出提示框1") }
+            event.drive(observer)
+            
+            let observer1: () -> Void = { showAlert("Signal: 弹出提示框1") }
+            event1.emit(onNext: observer1).disposed(by: rx.disposeBag)
+            
+            print("hehe")
+            
+            let newObserver: (Observable<Void>) -> Void = { _ in showAlert("Driver: 弹出提示框2") }
+            event.drive(newObserver)
+            
+            let newObserver1: () -> Void = { showAlert("Signal: 弹出提示框2") }
+            event1.emit(onNext: newObserver1).disposed(by: rx.disposeBag)
+        }
+        ObservableViewController.count += 1
+    }
+    
     
     @IBAction func controlEventButtonDidTouched(_ sender: UIButton) {
         

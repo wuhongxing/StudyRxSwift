@@ -10,6 +10,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ObservableViewController" customModule="StudyRxSwift" customModuleProvider="target">
             <connections>
                 <outlet property="resultLabel" destination="kzg-zx-WGx" id="LXI-5k-69D"/>
+                <outlet property="textField" destination="X7l-8F-paK" id="mb6-x8-Mkg"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -95,19 +96,27 @@
                     </constraints>
                 </stackView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="result" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kzg-zx-WGx">
-                    <rect key="frame" x="10" y="184" width="394" height="20.5"/>
+                    <rect key="frame" x="10" y="204" width="394" height="20.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X7l-8F-paK">
+                    <rect key="frame" x="10" y="170" width="394" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="awn-fw-qwy" secondAttribute="trailing" constant="10" id="DXW-Bk-r7I"/>
                 <constraint firstItem="kzg-zx-WGx" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="HSE-gi-mQg"/>
+                <constraint firstItem="X7l-8F-paK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="Ism-hZ-bKg"/>
                 <constraint firstItem="awn-fw-qwy" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="KsA-Dg-1iO"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="kzg-zx-WGx" secondAttribute="trailing" constant="10" id="YqB-cA-o9B"/>
-                <constraint firstItem="kzg-zx-WGx" firstAttribute="top" secondItem="awn-fw-qwy" secondAttribute="bottom" constant="10" id="kfm-Ox-2EK"/>
+                <constraint firstItem="kzg-zx-WGx" firstAttribute="top" secondItem="X7l-8F-paK" secondAttribute="bottom" id="c8m-df-RAx"/>
+                <constraint firstItem="kzg-zx-WGx" firstAttribute="top" secondItem="awn-fw-qwy" secondAttribute="bottom" constant="30" id="kfm-Ox-2EK"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="X7l-8F-paK" secondAttribute="trailing" constant="10" id="wjy-o3-rdG"/>
                 <constraint firstItem="awn-fw-qwy" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="xDd-zk-G9X"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
