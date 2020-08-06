@@ -15,6 +15,20 @@
 		1B607A3F24A412F900190BC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B607A3D24A412F900190BC4 /* LaunchScreen.storyboard */; };
 		1BEEBFC124D948B80021FECC /* ObservableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEEBFBF24D948B80021FECC /* ObservableViewController.swift */; };
 		1BEEBFC224D948B80021FECC /* ObservableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BEEBFC024D948B80021FECC /* ObservableViewController.xib */; };
+		1BEEBFC524DA437A0021FECC /* ObserverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEEBFC324DA437A0021FECC /* ObserverViewController.swift */; };
+		1BEEBFC624DA437A0021FECC /* ObserverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BEEBFC424DA437A0021FECC /* ObserverViewController.xib */; };
+		1BEEBFC924DA4A450021FECC /* SubjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEEBFC724DA4A450021FECC /* SubjectViewController.swift */; };
+		1BEEBFCA24DA4A450021FECC /* SubjectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BEEBFC824DA4A450021FECC /* SubjectViewController.xib */; };
+		1BEEBFCD24DA56270021FECC /* OperatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEEBFCB24DA56270021FECC /* OperatorViewController.swift */; };
+		1BEEBFCE24DA56270021FECC /* OperatorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BEEBFCC24DA56270021FECC /* OperatorViewController.xib */; };
+		1BEEBFD124DA59EC0021FECC /* DisposableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEEBFCF24DA59EC0021FECC /* DisposableViewController.swift */; };
+		1BEEBFD224DA59EC0021FECC /* DisposableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BEEBFD024DA59EC0021FECC /* DisposableViewController.xib */; };
+		1BEEBFD524DA711A0021FECC /* SchedulersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEEBFD324DA711A0021FECC /* SchedulersViewController.swift */; };
+		1BEEBFD624DA711A0021FECC /* SchedulersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BEEBFD424DA711A0021FECC /* SchedulersViewController.xib */; };
+		1BEEBFD924DA74920021FECC /* ErrorHandlingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEEBFD724DA74920021FECC /* ErrorHandlingViewController.swift */; };
+		1BEEBFDA24DA74920021FECC /* ErrorHandlingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BEEBFD824DA74920021FECC /* ErrorHandlingViewController.xib */; };
+		1BEEBFDD24DA7A060021FECC /* GithubSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEEBFDB24DA7A060021FECC /* GithubSignupViewController.swift */; };
+		1BEEBFDE24DA7A060021FECC /* GithubSignupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BEEBFDC24DA7A060021FECC /* GithubSignupViewController.xib */; };
 		28537D65C71005D95BA231E7 /* Pods_StudyRxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1181C0ABAE1A695F39B52CC5 /* Pods_StudyRxSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +44,20 @@
 		1B607A4024A412F900190BC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BEEBFBF24D948B80021FECC /* ObservableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableViewController.swift; sourceTree = "<group>"; };
 		1BEEBFC024D948B80021FECC /* ObservableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ObservableViewController.xib; sourceTree = "<group>"; };
+		1BEEBFC324DA437A0021FECC /* ObserverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserverViewController.swift; sourceTree = "<group>"; };
+		1BEEBFC424DA437A0021FECC /* ObserverViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ObserverViewController.xib; sourceTree = "<group>"; };
+		1BEEBFC724DA4A450021FECC /* SubjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectViewController.swift; sourceTree = "<group>"; };
+		1BEEBFC824DA4A450021FECC /* SubjectViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubjectViewController.xib; sourceTree = "<group>"; };
+		1BEEBFCB24DA56270021FECC /* OperatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatorViewController.swift; sourceTree = "<group>"; };
+		1BEEBFCC24DA56270021FECC /* OperatorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OperatorViewController.xib; sourceTree = "<group>"; };
+		1BEEBFCF24DA59EC0021FECC /* DisposableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisposableViewController.swift; sourceTree = "<group>"; };
+		1BEEBFD024DA59EC0021FECC /* DisposableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DisposableViewController.xib; sourceTree = "<group>"; };
+		1BEEBFD324DA711A0021FECC /* SchedulersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulersViewController.swift; sourceTree = "<group>"; };
+		1BEEBFD424DA711A0021FECC /* SchedulersViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SchedulersViewController.xib; sourceTree = "<group>"; };
+		1BEEBFD724DA74920021FECC /* ErrorHandlingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandlingViewController.swift; sourceTree = "<group>"; };
+		1BEEBFD824DA74920021FECC /* ErrorHandlingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ErrorHandlingViewController.xib; sourceTree = "<group>"; };
+		1BEEBFDB24DA7A060021FECC /* GithubSignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubSignupViewController.swift; sourceTree = "<group>"; };
+		1BEEBFDC24DA7A060021FECC /* GithubSignupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GithubSignupViewController.xib; sourceTree = "<group>"; };
 		6B9553BD36F9399E34E7B723 /* Pods-StudyRxSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyRxSwift.release.xcconfig"; path = "Target Support Files/Pods-StudyRxSwift/Pods-StudyRxSwift.release.xcconfig"; sourceTree = "<group>"; };
 		F580CE5D13C299F5450BEDCE /* Pods-StudyRxSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyRxSwift.debug.xcconfig"; path = "Target Support Files/Pods-StudyRxSwift/Pods-StudyRxSwift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,6 +100,20 @@
 				1B607A3624A412F800190BC4 /* ViewController.swift */,
 				1BEEBFBF24D948B80021FECC /* ObservableViewController.swift */,
 				1BEEBFC024D948B80021FECC /* ObservableViewController.xib */,
+				1BEEBFC324DA437A0021FECC /* ObserverViewController.swift */,
+				1BEEBFC424DA437A0021FECC /* ObserverViewController.xib */,
+				1BEEBFC724DA4A450021FECC /* SubjectViewController.swift */,
+				1BEEBFC824DA4A450021FECC /* SubjectViewController.xib */,
+				1BEEBFCB24DA56270021FECC /* OperatorViewController.swift */,
+				1BEEBFCC24DA56270021FECC /* OperatorViewController.xib */,
+				1BEEBFCF24DA59EC0021FECC /* DisposableViewController.swift */,
+				1BEEBFD024DA59EC0021FECC /* DisposableViewController.xib */,
+				1BEEBFD324DA711A0021FECC /* SchedulersViewController.swift */,
+				1BEEBFD424DA711A0021FECC /* SchedulersViewController.xib */,
+				1BEEBFD724DA74920021FECC /* ErrorHandlingViewController.swift */,
+				1BEEBFD824DA74920021FECC /* ErrorHandlingViewController.xib */,
+				1BEEBFDB24DA7A060021FECC /* GithubSignupViewController.swift */,
+				1BEEBFDC24DA7A060021FECC /* GithubSignupViewController.xib */,
 				1B607A3824A412F800190BC4 /* Main.storyboard */,
 				1B607A3B24A412F900190BC4 /* Assets.xcassets */,
 				1B607A3D24A412F900190BC4 /* LaunchScreen.storyboard */,
@@ -157,8 +199,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BEEBFDA24DA74920021FECC /* ErrorHandlingViewController.xib in Resources */,
+				1BEEBFCE24DA56270021FECC /* OperatorViewController.xib in Resources */,
 				1B607A3F24A412F900190BC4 /* LaunchScreen.storyboard in Resources */,
+				1BEEBFD224DA59EC0021FECC /* DisposableViewController.xib in Resources */,
 				1BEEBFC224D948B80021FECC /* ObservableViewController.xib in Resources */,
+				1BEEBFDE24DA7A060021FECC /* GithubSignupViewController.xib in Resources */,
+				1BEEBFC624DA437A0021FECC /* ObserverViewController.xib in Resources */,
+				1BEEBFD624DA711A0021FECC /* SchedulersViewController.xib in Resources */,
+				1BEEBFCA24DA4A450021FECC /* SubjectViewController.xib in Resources */,
 				1B607A3C24A412F900190BC4 /* Assets.xcassets in Resources */,
 				1B607A3A24A412F800190BC4 /* Main.storyboard in Resources */,
 			);
@@ -214,8 +263,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B607A3724A412F800190BC4 /* ViewController.swift in Sources */,
+				1BEEBFDD24DA7A060021FECC /* GithubSignupViewController.swift in Sources */,
+				1BEEBFC924DA4A450021FECC /* SubjectViewController.swift in Sources */,
+				1BEEBFC524DA437A0021FECC /* ObserverViewController.swift in Sources */,
 				1BEEBFC124D948B80021FECC /* ObservableViewController.swift in Sources */,
+				1BEEBFD924DA74920021FECC /* ErrorHandlingViewController.swift in Sources */,
+				1BEEBFD524DA711A0021FECC /* SchedulersViewController.swift in Sources */,
+				1BEEBFCD24DA56270021FECC /* OperatorViewController.swift in Sources */,
 				1B607A3324A412F800190BC4 /* AppDelegate.swift in Sources */,
+				1BEEBFD124DA59EC0021FECC /* DisposableViewController.swift in Sources */,
 				1B607A3524A412F800190BC4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

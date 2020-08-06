@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SubjectViewController" customModule="StudyRxSwift" customModuleProvider="target">
+            <connections>
+                <outlet property="asyncButton" destination="jJo-5K-5Nz" id="6OF-dm-uWL"/>
+                <outlet property="behaviorButton" destination="bNj-7h-OgX" id="hdG-7n-tod"/>
+                <outlet property="behaviorRelayButton" destination="RlW-QK-7px" id="a6h-0e-j3s"/>
+                <outlet property="publishButton" destination="lky-Ha-Wif" id="44k-Bv-HFy"/>
+                <outlet property="publishRelayButton" destination="7a6-Jd-e0b" id="n09-gb-zEH"/>
+                <outlet property="relayButton" destination="u3E-rr-Umo" id="vci-6W-xw6"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dA4-9I-UtL">
+                    <rect key="frame" x="10" y="54" width="394" height="100"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="1R9-va-HGj">
+                            <rect key="frame" x="0.0" y="0.0" width="141" height="100"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jJo-5K-5Nz">
+                                    <rect key="frame" x="0.0" y="0.0" width="141" height="50"/>
+                                    <state key="normal" title="AsyncSubject"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u3E-rr-Umo">
+                                    <rect key="frame" x="0.0" y="50" width="141" height="50"/>
+                                    <state key="normal" title="RelaySubject"/>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="u3E-rr-Umo" firstAttribute="height" secondItem="jJo-5K-5Nz" secondAttribute="height" id="gP3-2t-2zd"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Kgu-zK-T9g">
+                            <rect key="frame" x="141" y="0.0" width="141" height="100"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lky-Ha-Wif">
+                                    <rect key="frame" x="0.0" y="0.0" width="141" height="50"/>
+                                    <state key="normal" title="PublishSubject"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bNj-7h-OgX">
+                                    <rect key="frame" x="0.0" y="50" width="141" height="50"/>
+                                    <state key="normal" title="BehaviorSubject"/>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="bNj-7h-OgX" firstAttribute="height" secondItem="lky-Ha-Wif" secondAttribute="height" id="q5l-DG-VYR"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="XAL-Lb-l6s">
+                            <rect key="frame" x="282" y="0.0" width="112" height="100"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7a6-Jd-e0b">
+                                    <rect key="frame" x="0.0" y="0.0" width="112" height="50"/>
+                                    <state key="normal" title="PublishRelay"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RlW-QK-7px">
+                                    <rect key="frame" x="0.0" y="50" width="112" height="50"/>
+                                    <state key="normal" title="BehaviorRelay"/>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="RlW-QK-7px" firstAttribute="height" secondItem="7a6-Jd-e0b" secondAttribute="height" id="Ohj-7t-4cu"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="AuP-M7-geY"/>
+                        <constraint firstItem="XAL-Lb-l6s" firstAttribute="width" secondItem="Kgu-zK-T9g" secondAttribute="width" multiplier="0.794326" id="OeC-aX-n1Z"/>
+                        <constraint firstItem="1R9-va-HGj" firstAttribute="width" secondItem="Kgu-zK-T9g" secondAttribute="width" id="zdv-xp-j1b"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dA4-9I-UtL" secondAttribute="trailing" constant="10" id="Ihh-tt-U7a"/>
+                <constraint firstItem="dA4-9I-UtL" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="kIt-tl-1uk"/>
+                <constraint firstItem="dA4-9I-UtL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="oyx-qu-bQr"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="101.78571428571428"/>
+        </view>
+    </objects>
+</document>
